@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './Header.css';
 
-const Header = (props) => {
+const Header = () => {
   return (
-    <header className="home-header"></header>
-    <h1 className='home-main-title'>
-      KESQU'onregarde ?
-    </h1>
+    <div className='header-nav'>
+      <h1>KESQU'ONREGARDE ?</h1>
+    </div>
+  );
+};
 
-  )
-}
-
-export default Header
+export default Header;
