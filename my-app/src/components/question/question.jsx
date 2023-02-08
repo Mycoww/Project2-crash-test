@@ -7,6 +7,11 @@ function Questionnaire() {
   const [selectedOption3, setSelectedOption3] = useState('');
   const [selectedOption4, setSelectedOption4] = useState('');
 
+  const [showQuestions, setShowQuestions] = useState(false);
+  const openWindows = () => {
+    setShowQuestions(!showQuestions);
+  };
+
   useEffect(() => {
     if (
       selectedOption1 !== '' &&
@@ -26,15 +31,9 @@ function Questionnaire() {
     }
   }, [selectedOption1, selectedOption2, selectedOption3, selectedOption4]);
 
-  const [showQuestions, setShowQuestions] = useState(false);
-
-  const openWindows = () => {
-    setShowQuestions(!showQuestions);
-  };
-
   return (
     <div className='Main-conteneur-questions'>
-      <div>
+      <div className='bouton-Questions'>
         <button onClick={openWindows}>Questions</button>
       </div>
       <div
