@@ -1,0 +1,10 @@
+.header-nav {
+  background-color: #212121;
+}
+
+.header-nav h1 {
+  color: rgb(235, 226, 229);
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  padding: 20px;
+}
