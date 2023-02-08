@@ -26,40 +26,54 @@ function Questionnaire() {
     }
   }, [selectedOption1, selectedOption2, selectedOption3, selectedOption4]);
 
+  const [showQuestions, setShowQuestions] = useState(false);
+
+  const openWindows = () => {
+    setShowQuestions(!showQuestions);
+  };
+
   return (
-    <div className='conteneur-boutons'>
-      <h3>Question 1</h3>
+    <div className='Main-conteneur-questions'>
       <div>
-        <button onClick={() => setSelectedOption1('oui')}>Oui</button>
-        <button onClick={() => setSelectedOption1('non')}>Non</button>
+        <button onClick={openWindows}>Questions</button>
       </div>
-      {selectedOption1 === 'oui' || selectedOption1 === 'non' ? (
+      <div
+        className='conteneur-questions'
+        style={{ display: showQuestions ? 'block' : 'none' }}
+      >
+        <h3>Question 1</h3>
         <div>
-          <h3>Question 2</h3>
-          <div>
-            <button onClick={() => setSelectedOption2('oui')}>Oui</button>
-            <button onClick={() => setSelectedOption2('non')}>Non</button>
-          </div>
+          <button onClick={() => setSelectedOption1('oui')}>Oui</button>
+          <button onClick={() => setSelectedOption1('non')}>Non</button>
         </div>
-      ) : null}
-      {selectedOption2 === 'oui' || selectedOption2 === 'non' ? (
-        <div>
-          <h3>Question 3</h3>
+        {selectedOption1 === 'oui' || selectedOption1 === 'non' ? (
           <div>
-            <button onClick={() => setSelectedOption3('oui')}>Oui</button>
-            <button onClick={() => setSelectedOption3('non')}>Non</button>
+            <h3>Question 2</h3>
+            <div>
+              <button onClick={() => setSelectedOption2('oui')}>Oui</button>
+              <button onClick={() => setSelectedOption2('non')}>Non</button>
+            </div>
           </div>
-        </div>
-      ) : null}
-      {selectedOption3 === 'oui' || selectedOption3 === 'non' ? (
-        <div>
-          <h3>Question 4</h3>
+        ) : null}
+        {selectedOption2 === 'oui' || selectedOption2 === 'non' ? (
           <div>
-            <button onClick={() => setSelectedOption4('oui')}>Oui</button>
-            <button onClick={() => setSelectedOption4('non')}>Non</button>
+            <h3>Question 3</h3>
+            <div>
+              <button onClick={() => setSelectedOption3('oui')}>Oui</button>
+              <button onClick={() => setSelectedOption3('non')}>Non</button>
+            </div>
           </div>
-        </div>
-      ) : null}
+        ) : null}
+        {selectedOption3 === 'oui' || selectedOption3 === 'non' ? (
+          <div>
+            <h3>Question 4</h3>
+            <div>
+              <button onClick={() => setSelectedOption4('oui')}>Oui</button>
+              <button onClick={() => setSelectedOption4('non')}>Non</button>
+            </div>
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 }
