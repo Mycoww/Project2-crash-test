@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --primary-color: #8c1b11;
   --secondary-color: #212121;
@@ -22,4 +16,34 @@
   --title-font-size: 10pt;
   --menu-font-size: 14pt;
   --home-title-font-size: 21pt;
+}
+
+.posterDisplay ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.posterDisplay li {
+  margin-bottom: 20px;
+}
+
+.posterDisplay img {
+  width: auto;
+  height: 120px;
+  border-radius: 5px;
+}
+
+.posterDisplay h4 {
+  font-family: var(--main-font-family);
+  text-align: center;
+  margin-top: 10px;
+  font-size: var(--text-font-size);
+  font-weight: normal;
+}
+.posterDisplay p {
+  font-family: var(--main-font-family);
+  font-size: var(--title-font-size);
 }
