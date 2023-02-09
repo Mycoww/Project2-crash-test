@@ -40,35 +40,45 @@ function Questionnaire() {
         className='conteneur-questions'
         style={{ display: showQuestions ? 'block' : 'none' }}
       >
-        <h3>Question 1</h3>
+        <h3>Du fight ou du lol ?</h3>
         <div>
-          <button onClick={() => setSelectedOption1('oui')}>Oui</button>
-          <button onClick={() => setSelectedOption1('non')}>Non</button>
+          <button onClick={() => setSelectedOption1('oui')}>Fight</button>
+          <button onClick={() => setSelectedOption1('non')}>Lol</button>
         </div>
         {selectedOption1 === 'oui' || selectedOption1 === 'non' ? (
           <div>
-            <h3>Question 2</h3>
+            <h3>Exotique ou nostalgique?</h3>
             <div>
-              <button onClick={() => setSelectedOption2('oui')}>Oui</button>
-              <button onClick={() => setSelectedOption2('non')}>Non</button>
+              <button onClick={() => setSelectedOption2('oui')}>
+                Exotique
+              </button>
+              <button onClick={() => setSelectedOption2('non')}>
+                Nostalgique
+              </button>
             </div>
           </div>
         ) : null}
         {selectedOption2 === 'oui' || selectedOption2 === 'non' ? (
           <div>
-            <h3>Question 3</h3>
+            <h3>Plutot Star Trek ou Titanic ?</h3>
             <div>
-              <button onClick={() => setSelectedOption3('oui')}>Oui</button>
-              <button onClick={() => setSelectedOption3('non')}>Non</button>
+              <button onClick={() => setSelectedOption3('oui')}>
+                Star Trek
+              </button>
+              <button onClick={() => setSelectedOption3('non')}>Titanic</button>
             </div>
           </div>
         ) : null}
         {selectedOption3 === 'oui' || selectedOption3 === 'non' ? (
           <div>
-            <h3>Question 4</h3>
+            <h3>Plutot réaliste ou enfantin ?</h3>
             <div>
-              <button onClick={() => setSelectedOption4('oui')}>Oui</button>
-              <button onClick={() => setSelectedOption4('non')}>Non</button>
+              <button onClick={() => setSelectedOption4('oui')}>
+                réaliste
+              </button>
+              <button onClick={() => setSelectedOption4('non')}>
+                enfantin
+              </button>
             </div>
           </div>
         ) : null}
