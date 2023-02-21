@@ -1,0 +1,28 @@
+.footer {
+  background-color: #212121;
+}
+
+.footer-logo {
+  color: rgb(235, 226, 229);
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  color: rgb(235, 226, 229);
+  text-align: center;
+}
+
+.social-media-icons {
+  display: flex;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media-icons a:not(:last-child) {
+  margin-right: 1rem;
+}
