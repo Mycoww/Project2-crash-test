@@ -1,5 +1,9 @@
 .footer {
   background-color: #212121;
+  bottom: '0';
+  width: '100%';
+  align-content: 'center';
+  margin-top: 20px;
 }
 
 .footer-logo {
@@ -14,6 +18,7 @@
   justify-content: space-around;
   color: rgb(235, 226, 229);
   text-align: center;
+  font-size: large;
 }
 
 .social-media-icons {
@@ -23,6 +28,14 @@
   justify-content: space-evenly;
 }
 
-.social-media-icons a:not(:last-child) {
-  margin-right: 1rem;
+.social-media-icons a {
+  color: blue;
+  height: 20px;
+  font-size: large;
+  padding-bottom: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }

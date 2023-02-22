@@ -10,19 +10,19 @@ const Footer = () => {
   return (
     <footer
       className='footer'
-      style={{
-        position: 'fixed',
-        bottom: '0',
-        width: '100%',
-        alignContent: 'center',
-      }}
+      // style={{
+      //   position: 'fixed',
+      //   bottom: '0',
+      //   width: '100%',
+      //   alignContent: 'center',
+      // }}
     >
       <div className='footer-logo'>
         <h1>KESQU'ONREGARDE </h1>
       </div>
       <nav>
         <ul className='footer-nav'>
-          <li>contact</li>
+          <li>Contact</li>
           <li>A propos</li>
           <li>CG</li>
         </ul>
