@@ -8,15 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer
-      className='footer'
-      // style={{
-      //   position: 'fixed',
-      //   bottom: '0',
-      //   width: '100%',
-      //   alignContent: 'center',
-      // }}
-    >
+    <footer className='footer'>
       <div className='footer-logo'>
         <h1>KESQU'ONREGARDE </h1>
       </div>
