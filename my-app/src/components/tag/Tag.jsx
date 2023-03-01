@@ -61,6 +61,9 @@ import PropTypes from 'prop-types';
 
 function TagSelection({ selectedTags, setSelectedTags }) {
   const handleTagSelection = (tag) => {
+    console.log(tag);
+    console.log(selectedTags);
+    console.log(selectedTags.includes(tag));
     if (!selectedTags.includes(tag)) {
       setSelectedTags([...selectedTags, tag]);
     } else {
@@ -76,17 +79,17 @@ function TagSelection({ selectedTags, setSelectedTags }) {
           <input
             type='checkbox'
             id='tag1'
-            onChange={() => handleTagSelection(28)}
+            onChange={() => handleTagSelection(10751)}
           />
-          <label htmlFor='tag1'>Action</label>
+          <label htmlFor='tag1'>Famille</label>
         </div>
         <div>
           <input
             type='checkbox'
             id='tag2'
-            onChange={() => handleTagSelection(12)}
+            onChange={() => handleTagSelection(37)}
           />
-          <label htmlFor='tag2'>Aventure</label>
+          <label htmlFor='tag2'>Western</label>
         </div>
         <div>
           <input

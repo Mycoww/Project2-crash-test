@@ -1,9 +1,9 @@
-//import './Film.css';
+import './DisplayFilm.css';
 import PropTypes from 'prop-types';
 
 function DisplayFilm({ filmList }) {
   return (
-    <div>
+    <div className='displayFilm'>
       Liste des films trouvés :<br></br>
       <br></br>
       <ul>

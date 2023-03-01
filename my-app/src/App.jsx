@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/header/Header';
-import Questionnaire from './components/question/Question';
+import Questionnaire from './components/question/Questionnaire';
 import Footer from './components/footer/Footer';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -11,6 +11,7 @@ import DisplayFilm from './components/displayFilm/DisplayFilm';
 function App() {
   const [myData, setMyData] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
+  const [allQuestionsAnswered, setAllQuestionsAnswered] = useState(false);
 
   const getData = () => {
     let genresList = '';
@@ -48,8 +49,12 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      {/* <Home />
-      <Questionnaire /> */}
+      {/* <Home />*/}
+      <Questionnaire
+        allQuestionsAnswered={allQuestionsAnswered}
+        selectedTags={selectedTags}
+        setSelectedTags={setSelectedTags}
+      />
       <TagSelection
         selectedTags={selectedTags}
         setSelectedTags={setSelectedTags}
@@ -66,7 +71,9 @@ function App() {
           ))}
         </ul>
       </div> */}
-      <DisplayFilm filmList={myData} />
+      <div className='question-section'>
+        <DisplayFilm filmList={myData} />
+      </div>
       <Footer />
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Questionnaire from '../question/Question';
+import Questionnaire from '../question/Questionnaire';
 import TagSection from '../tag/Tag';
 
 function Home() {
