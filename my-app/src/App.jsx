@@ -4,7 +4,6 @@ import Questionnaire from './components/question/Questionnaire';
 import Footer from './components/footer/Footer';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Home from './components/home/Home';
 import TagSelection from './components/tag/Tag';
 import DisplayFilm from './components/displayFilm/DisplayFilm';
 
@@ -49,7 +48,6 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      {/* <Home />*/}
       <Questionnaire
         allQuestionsAnswered={allQuestionsAnswered}
         selectedTags={selectedTags}
@@ -60,17 +58,7 @@ function App() {
         setSelectedTags={setSelectedTags}
       />
       <br></br>
-      {/* <button type='button' onClick={getData}>
-        Rechercher les films correspondant aux tags
-      </button> */}
-      {/* <div>
-        My tags :
-        <ul>
-          {selectedTags.map((tag) => (
-            <li key={tag}>{tag}</li>
-          ))}
-        </ul>
-      </div> */}
+
       <div className='question-section'>
         <DisplayFilm filmList={myData} />
       </div>

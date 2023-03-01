@@ -1,5 +1,5 @@
 import './DisplayFilm.css';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 function DisplayFilm({ filmList }) {
   return (
