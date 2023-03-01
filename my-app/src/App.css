@@ -1,4 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap');
 
+.question-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.question-container {
+  width: 30%;
+}
