@@ -47,19 +47,24 @@ function App() {
 
   return (
     <div className='App'>
-      <Header />
-      <Questionnaire
-        allQuestionsAnswered={allQuestionsAnswered}
-        selectedTags={selectedTags}
-        setSelectedTags={setSelectedTags}
-      />
-      <TagSelection
-        selectedTags={selectedTags}
-        setSelectedTags={setSelectedTags}
-      />
-      <div className='question-section'>
-        <DisplayFilm filmList={myData} />
+      <Header className='class-header' />
+      <div className='HomeDisplay'>
+        <div className='search-Main'>
+          <Questionnaire
+            allQuestionsAnswered={allQuestionsAnswered}
+            selectedTags={selectedTags}
+            setSelectedTags={setSelectedTags}
+          />
+          <TagSelection
+            selectedTags={selectedTags}
+            setSelectedTags={setSelectedTags}
+          />
+        </div>
+        <div className='question-section'>
+          <DisplayFilm filmList={myData} />
+        </div>
       </div>
+
       <Footer />
     </div>
   );

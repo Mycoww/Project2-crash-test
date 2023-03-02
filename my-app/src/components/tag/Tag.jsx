@@ -13,8 +13,8 @@ function TagSelection({ selectedTags, setSelectedTags }) {
   return (
     <div className='question-container-tag-div'>
       <div className='tag-container-div'>
-        <p>Quels sont vos tags préférés ?</p>
-        <div>
+        <h3>Tags</h3>
+        <div className='container-div'>
           <input
             type='checkbox'
             id='tag1'
@@ -22,7 +22,7 @@ function TagSelection({ selectedTags, setSelectedTags }) {
           />
           <label htmlFor='tag1'>Famille</label>
         </div>
-        <div>
+        <div className='container-div'>
           <input
             type='checkbox'
             id='tag2'
@@ -30,7 +30,7 @@ function TagSelection({ selectedTags, setSelectedTags }) {
           />
           <label htmlFor='tag2'>Western</label>
         </div>
-        <div>
+        <div className='container-div'>
           <input
             type='checkbox'
             id='tag3'
@@ -38,7 +38,7 @@ function TagSelection({ selectedTags, setSelectedTags }) {
           />
           <label htmlFor='tag3'>Horreur</label>
         </div>
-        <div>
+        <div className='container-div'>
           <input
             type='checkbox'
             id='tag4'

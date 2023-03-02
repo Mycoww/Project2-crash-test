@@ -42,7 +42,9 @@ function Questionnaire({
   return (
     <div className='Main-conteneur-questions'>
       <div className='bouton-Questions'>
-        <button onClick={openWindows}>Questions</button>
+        <button onClick={openWindows} className='button-question'>
+          Questions
+        </button>
       </div>
       <div
         className='conteneur-questions'

@@ -1,10 +1,23 @@
-.displayFilm {
+.movies-section {
   display: flex;
-  width: 70%;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 40px;
-  margin-left: 0px;
-  overflow-y: scroll;
-  max-height: calc(400px + 40px);
+  margin-left: 40px;
+  max-height: 100%;
+  width: 100%;
+}
+
+.movie-card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 25%;
+}
+
+.movie-card h3,
+p {
+  font-family: 'Roboto';
 }
