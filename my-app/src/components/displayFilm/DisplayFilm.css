@@ -9,15 +9,30 @@
 
 .movie-card {
   background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  overflow: hidden;
   margin-bottom: 40px;
   text-align: center;
-  width: 25%;
+  width: 100%;
+  padding: 20px;
 }
 
 .movie-card h3,
 p {
   font-family: 'Roboto';
+}
+.movie-card-container {
+  width: 25%;
+}
+.resume {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  font-size: small;
+}
+/* @media screen and (min-width: 721px) {
+  img {
+    width: 40vh;
+  }
+} */
+img {
+  width: 25vh;
 }

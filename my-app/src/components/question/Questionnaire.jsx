@@ -50,38 +50,36 @@ function Questionnaire({
         className='conteneur-questions'
         style={{ display: showQuestions ? 'block' : 'none' }}
       >
-        <h3>Action ou Animation ?</h3>
+        <h3>Fast&furius ou Pokemon?</h3>
         <div>
-          <button onClick={() => setSelectedOption1('oui')}>Action</button>
-          <button onClick={() => setSelectedOption1('non')}>Animation</button>
+          <button onClick={() => setSelectedOption1('oui')}>Fast&furius</button>
+          <button onClick={() => setSelectedOption1('non')}>Pokemon</button>
         </div>
         {selectedOption1 === 'oui' || selectedOption1 === 'non' ? (
           <div>
-            <h3>Aventure ou Drame ?</h3>
+            <h3>Chien ou chat ?</h3>
             <div>
-              <button onClick={() => setSelectedOption2('oui')}>
-                Aventure
-              </button>
-              <button onClick={() => setSelectedOption2('non')}>Drame</button>
+              <button onClick={() => setSelectedOption2('oui')}>Chien</button>
+              <button onClick={() => setSelectedOption2('non')}>Chat</button>
             </div>
           </div>
         ) : null}
         {selectedOption2 === 'oui' || selectedOption2 === 'non' ? (
           <div>
-            <h3>SF ou Romance ?</h3>
+            <h3>007 ou Metallica ?</h3>
             <div>
-              <button onClick={() => setSelectedOption3('oui')}>SF</button>
-              <button onClick={() => setSelectedOption3('non')}>Romance</button>
+              <button onClick={() => setSelectedOption3('oui')}>007</button>
+              <button onClick={() => setSelectedOption3('non')}>
+                Metallica
+              </button>
             </div>
           </div>
         ) : null}
         {selectedOption3 === 'oui' || selectedOption3 === 'non' ? (
           <div>
-            <h3>Thriller ou Comédie ?</h3>
+            <h3>Enfantin ou serieux?</h3>
             <div>
-              <button onClick={() => setSelectedOption4('oui')}>
-                Thriller
-              </button>
+              <button onClick={() => setSelectedOption4('oui')}>Enfatin</button>
               <button onClick={() => setSelectedOption4('non')}>Comédie</button>
             </div>
           </div>
