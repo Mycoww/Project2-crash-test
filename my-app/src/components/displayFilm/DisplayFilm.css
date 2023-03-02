@@ -1,0 +1,10 @@
+.displayFilm {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px;
+  margin-left: 0px;
+  overflow-y: scroll;
+  max-height: calc(400px + 40px);
+}

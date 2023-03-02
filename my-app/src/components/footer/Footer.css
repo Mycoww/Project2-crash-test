@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .footer {
   background-color: #212121;
   bottom: '0';
@@ -33,9 +37,4 @@
   height: 20px;
   font-size: large;
   padding-bottom: 10px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
 }

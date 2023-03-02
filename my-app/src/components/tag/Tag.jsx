@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 
 function TagSelection({ selectedTags, setSelectedTags }) {
   const handleTagSelection = (tag) => {
-    console.log(tag);
-    console.log(selectedTags);
-    console.log(selectedTags.includes(tag));
     if (!selectedTags.includes(tag)) {
       setSelectedTags([...selectedTags, tag]);
     } else {

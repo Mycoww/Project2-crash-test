@@ -57,8 +57,6 @@ function App() {
         selectedTags={selectedTags}
         setSelectedTags={setSelectedTags}
       />
-      <br></br>
-
       <div className='question-section'>
         <DisplayFilm filmList={myData} />
       </div>

@@ -4,20 +4,16 @@ import './DisplayFilm.css';
 function DisplayFilm({ filmList }) {
   return (
     <div className='displayFilm'>
-      Liste des films trouvés :<br></br>
-      <br></br>
+      Liste des films trouvés :
       <ul>
         {filmList.map((film) => (
           <li key={film.id}>
             Titre : {film.title}, Date de sortie : {film.release_date}
-            <br></br>Résumé : {film.overview}
-            <br></br>
+            Résumé : {film.overview}
             <img
               src={'http://image.tmdb.org/t/p/w154' + film.poster_path}
               alt='Affiche'
             ></img>
-            <br></br>
-            <br></br>
           </li>
         ))}
       </ul>
